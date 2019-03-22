@@ -33,5 +33,10 @@ class Owner
   def buy_cat(cat)
     @pets[:cat] << cat if cat.species = "cat" 
     cat.owner = self
-  end 
+  end
+  
+  def buy_dog(dog)
+    @pets[:dog] << dog if dog.species = "dog" 
+    dog.owner = self
+  end
 end
