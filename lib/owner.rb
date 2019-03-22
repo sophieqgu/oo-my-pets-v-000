@@ -25,7 +25,8 @@ class Owner
     puts "I am a #{species}."
   end 
   
-  def buy_fish 
+  def buy_fish(fish)
+    @pets[:fish] << fish if 
     
   
 end
