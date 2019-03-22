@@ -26,7 +26,7 @@ class Owner
   end 
   
   def buy_fish(fish)
-    @pets[:fish] << fish if 
+    @pets[:fish] << fish if fish.species = "fish" 
     
   
 end
