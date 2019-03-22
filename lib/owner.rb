@@ -57,5 +57,8 @@ class Owner
     @pets[:cats].each {|cat| cat.mood = "nervous"}
     @pets[:fishes].each {|fish| fish.mood = "nervous"}
     @pets.each {|pet| pet.clear}
-    
+  end 
+  
+  def list_pets 
+    puts "I have "
 end
