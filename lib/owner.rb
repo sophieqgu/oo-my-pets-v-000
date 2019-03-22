@@ -39,4 +39,6 @@ class Owner
     @pets[:dog] << dog if dog.species = "dog" 
     dog.owner = self
   end
+  
+  def walk_dogs(dog)
 end
