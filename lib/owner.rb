@@ -26,19 +26,23 @@ class Owner
   end 
   
   def buy_fish(fish)
-    @pets[:fish] << fish if fish.species = "fish" 
+    @pets[:fishes] << fish if fish.species = "fish" 
     fish.owner = self
   end 
   
   def buy_cat(cat)
-    @pets[:cat] << cat if cat.species = "cat" 
+    @pets[:cats] << cat if cat.species = "cat" 
     cat.owner = self
   end
   
   def buy_dog(dog)
-    @pets[:dog] << dog if dog.species = "dog" 
+    @pets[:dogs] << dog if dog.species = "dog" 
     dog.owner = self
   end
   
-  def walk_dogs(dog)
+  def walk_dogs
+    @pets[:dogs].each {|dog| dog.mood = "happy"}
+  end 
+  
+  
 end
