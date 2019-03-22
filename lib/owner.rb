@@ -18,7 +18,7 @@ class Owner
   end 
   
   def self.reset_all
-    @@all = []
+    @@all.clear
   end 
   
   def say_species
@@ -56,5 +56,6 @@ class Owner
     @pets[:dogs].each {|dog| dog.mood = "nervous"}
     @pets[:cats].each {|cat| cat.mood = "nervous"}
     @pets[:fishes].each {|fish| fish.mood = "nervous"}
+    @pets.each {|pet| pet.clear}
     
 end
